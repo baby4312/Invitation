@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ghar Parvesh & Khatu Shyam Ji Jagran Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #ffe4b5, #ffd1dc, #fff8dc);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      overflow: hidden;
+    }
+
+    /* --- Animations --- */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      0%, 100% {
+        text-shadow: 0 0 10px #ffcc80, 0 0 20px #ffb347, 0 0 30px #ff9966;
+      }
+      50% {
+        text-shadow: 0 0 15px #ffb347, 0 0 25px #ff9966, 0 0 35px #ff7043;
+      }
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-10%) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(120vh) rotate(360deg); opacity: 0; }
+    }
+
+    .flower {
+      position: fixed;
+      top: -50px;
+      font-size: 1.8rem;
+      animation: fall linear infinite;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* --- Inward positions for more natural flow --- */
+    .flower.left { left: 10%; }
+    .flower.left:nth-child(2) { left: 15%; animation-duration: 7s; animation-delay: 1s; }
+    .flower.left:nth-child(3) { left: 20%; animation-duration: 8s; animation-delay: 2s; }
+    .flower.left:nth-child(4) { left: 12%; animation-duration: 9s; animation-delay: 3s; }
+    .flower.left:nth-child(5) { left: 18%; animation-duration: 10s; animation-delay: 4s; }
+
+    .flower.right { right: 10%; animation-duration: 6s; animation-delay: 0.5s; }
+    .flower.right:nth-child(7) { right: 15%; animation-duration: 7s; animation-delay: 1.5s; }
+    .flower.right:nth-child(8) { right: 20%; animation-duration: 8s; animation-delay: 2.5s; }
+    .flower.right:nth-child(9) { right: 12%; animation-duration: 9s; animation-delay: 3.5s; }
+    .flower.right:nth-child(10) { right: 18%; animation-duration: 10s; animation-delay: 4.5s; }
+    .flower.right:nth-child(11) { right: 14%; animation-duration: 11s; animation-delay: 5.5s; }
+    .flower.right:nth-child(12) { right: 16%; animation-duration: 12s; animation-delay: 6s; }
+
+    /* --- Card Styling --- */
+    .card {
+      max-width: 700px;
+      background: #fff;
+      margin: 60px auto;
+      border-radius: 20px;
+      padding: 50px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      text-align: center;
+      opacity: 0;
+      animation: fadeInUp 1.2s ease-out forwards;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: #b45f06;
+      animation: glow 2.5s infinite ease-in-out;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: #333;
+      margin: 15px 0;
+    }
+
+    p {
+      margin: 8px 0;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    /* Extra spacing between the two date sections */
+    .schedule-day {
+      margin-bottom: 30px;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #eee;
+      margin: 25px 0;
+    }
+
+    .highlight {
+      color: #b45f06;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <!-- Falling flowers (12 total for rich animation) -->
+  <div class="flower left">🌸</div>
+  <div class="flower left">🌼</div>
+  <div class="flower left">💮</div>
+  <div class="flower left">🌺</div>
+  <div class="flower left">🌻</div>
+
+  <div class="flower right">🌸</div>
+  <div class="flower right">🌺</div>
+  <div class="flower right">🌼</div>
+  <div class="flower right">💮</div>
+  <div class="flower right">🌻</div>
+  <div class="flower right">🌸</div>
+  <div class="flower right">🌺</div>
+
+  <!-- Invitation Card -->
+  <div class="card">
+    <h1>🪔 Ghar Parvesh & Khatu Shyam Ji Jagran 🪔</h1>
+    <p><em>With the divine blessings of Maa Durga & Shri Khatu Shyam Ji</em></p>
+    <p>We warmly invite you and your family to join us for our new home celebration.</p>
+
+    <hr>
+    <h2>📅 Programme Schedule</h2>
+
+    <p class="schedule-day">
+      <span class="highlight">9th November 2025</span><br>
+      Dinner: 7 PM – 10 PM<br>
+      Khatu Shyam Ji Jagran: 10:30 PM – 5 AM (10th Morning)
+    </p>
+
+    <p>
+      <span class="highlight">10th November 2025</span><br>
+      Ghar Parvesh Pujan: Morning Ceremony<br>
+      Lunch: 12 PM – 3 PM<br>
+      Dinner: 7 PM – 10 PM
+    </p>
+
+    <hr>
+    <p>🌸 आप सपरिवार सादर आमंत्रित हैं 🌸<br>
+    माँ दुर्गा एवं श्री खाटू श्याम जी की असीम कृपा से<br>
+    आप हमारे गृह प्रवेश एवं जागरण समारोह में सादर आमंत्रित हैं।</p>
+
+    <hr>
+    <p><strong>We look forward to your presence and blessings.</strong></p>
+  </div>
+</body>
+</html>
